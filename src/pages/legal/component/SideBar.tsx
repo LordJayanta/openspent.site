@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { Link, NavLink } from 'react-router'
+import { useEffect } from 'react'
+import { NavLink } from 'react-router'
 
 type Props = {
   GuaranteeCard?: {

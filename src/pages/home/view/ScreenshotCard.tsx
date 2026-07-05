@@ -1,5 +1,3 @@
-import React from 'react'
-
 export type ScreenshotCardType = {
     src: string,
     title: string,

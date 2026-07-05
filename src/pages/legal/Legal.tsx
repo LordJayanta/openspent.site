@@ -1,6 +1,6 @@
 import Header from '../../shared/component/Header'
 import Footer from '../../shared/component/Footer'
-import { useNavigate, useParams, useSearchParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import SideBar from './component/SideBar';
 import Privacy from './component/Privacy';
 import Terms from './component/Terms';
@@ -23,7 +23,7 @@ function Legal() {
   return (
     <div>
       <Header />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow w-full">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grow w-full">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 items-start">
           <SideBar GuaranteeCard={
             slug === "privacy" ? {
