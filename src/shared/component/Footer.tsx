@@ -1,5 +1,7 @@
 import type { NavItemType } from '../type/type'
 import FooterLinkList from './FooterLinkList'
+import iconImg from "@/assets/images/icon.webp"
+
 
 const legalItems: NavItemType[] = [
     { name: 'Privacy Policy', href: '/privacy' },
@@ -29,7 +31,7 @@ function Footer() {
                 <div className="grid grid-cols-2 md:grid-cols-2 gap-8 mb-12">
                     <div className="col-span-1 space-y-3">
                         <div className="flex items-center space-x-2">
-                            <img src="/assets/images/icon.webp" className="w-12 h-12 flex items-center justify-center shadow-md" />
+                            <img src={iconImg} className="w-12 h-12 flex items-center justify-center shadow-md" />
                             <span className="text-2xl font-bold text-white tracking-tight" >OpenSpent</span>
                         </div>
                         <p className="max-w-xs leading-relaxed text-neutral-500">

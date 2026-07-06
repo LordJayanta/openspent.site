@@ -1,3 +1,5 @@
+import walletImg from "@/assets/images/wallet.webp" 
+
 const MissionSection = () => {
   return (
     <section
@@ -35,7 +37,7 @@ const MissionSection = () => {
 
         {/* <!-- Conceptual Visual Wallet Placeholder --> */}
         <div className="lg:col-span-5 flex justify-center">
-          <img src='./assets/images/wallet.webp' className='' />
+          <img src={walletImg} className='' />
         </div>
       </div>
     </section>

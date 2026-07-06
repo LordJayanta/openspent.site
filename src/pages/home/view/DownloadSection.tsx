@@ -1,5 +1,7 @@
-import DownloadButton from '../../../shared/component/DownloadButton'
+import DownloadButton from '@/shared/component/DownloadButton'
 import { FaApple, FaGithub, FaGooglePlay } from 'react-icons/fa'
+import moneyLockerImg from "@/assets/images/money_locker.webp"
+import walletImg from "@/assets/images/wallet.webp"
 
 
 
@@ -9,7 +11,7 @@ function DownloadSection() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                 <div className="lg:col-span-3 space-y-6">
-                    <img src="./assets/images/wallet.webp" alt="" />
+                    <img src={walletImg} alt="walletImg" />
                 </div>
 
                 <div className="lg:col-span-6 space-y-9">
@@ -38,7 +40,7 @@ function DownloadSection() {
                 </div>
 
                 <div className="lg:col-span-3 space-y-6">
-                    <img src="./assets/images/money_locker.webp" alt="" />
+                    <img src={moneyLockerImg} alt="moneyLockerImg" />
                 </div>
 
             </div>

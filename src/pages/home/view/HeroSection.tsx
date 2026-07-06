@@ -1,5 +1,6 @@
 import { FaApple, FaGithub, FaGooglePlay } from 'react-icons/fa'
 import { Link } from 'react-router'
+import heroImg from '@/assets/images/hero.webp'
 
 function HeroSection() {
     return (
@@ -88,7 +89,7 @@ function HeroSection() {
             {/* <!-- Hero Isometric Graphic Display --> */}
             <div className="lg:col-span-4 flex justify-center relative">
 
-                <img src='/assets/images/hero.webp' className='w-full h-fit' />
+                <img src={heroImg} alt='heroImg' className='w-full h-fit' />
 
             </div>
         </section >

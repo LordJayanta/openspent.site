@@ -1,29 +1,36 @@
 import type { ScreenshotCardType } from './ScreenshotCard'
 import ScreenshotCard from './ScreenshotCard'
 
+import dashboardImg from '@/assets/images/screenshots/dashboard.webp'
+import allTransactionsImg from '@/assets/images/screenshots/all-transactions.webp'
+import addTransactionImg from '@/assets/images/screenshots/add-transaction.webp'
+import insightsImg from '@/assets/images/screenshots/insights.webp'
+import settingsImg from '@/assets/images/screenshots/settings.webp'
+
+
 const ScreenshotItem: ScreenshotCardType[] = [
   {
-    src: './assets/images/screenshots/dashboard.webp',
+    src: dashboardImg,
     title: 'Dashboard',
     description: 'Overview of all your spending and transactions in one place.',
   },
   {
-    src: './assets/images/screenshots/all-transactions.webp',
+    src: allTransactionsImg,
     title: 'All Transactions',
     description: 'View and manage all your transactions',
   },
   {
-    src: './assets/images/screenshots/add-transaction.webp',
+    src: addTransactionImg,
     title: 'Add Transaction',
     description: 'Quick and eacy transaction entry.',
   },
   {
-    src: './assets/images/screenshots/insights.webp',
+    src: insightsImg,
     title: 'Insights',
     description: 'In-depth analytics and reports',
   },
   {
-    src: './assets/images/screenshots/settings.webp',
+    src: settingsImg,
     title: 'Settings',
     description: 'Manage your account settings and preferences',
   }

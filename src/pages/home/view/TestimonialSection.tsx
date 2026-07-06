@@ -1,4 +1,5 @@
 import { FaQuoteLeft } from 'react-icons/fa'
+import heartImg from "@/assets/images/heart.webp"
 
 function TestimonialSection() {
   return (
@@ -8,7 +9,7 @@ function TestimonialSection() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         <div className="col-span-1 lg:col-span-6 grid grid-cols-1 lg:grid-cols-12 items-center gap-4">
           <div className='lg:col-span-5 overflow-hidden flex justify-center lg:justify-start'>
-            <img src='./assets/images/heart.webp' alt="heart" className='w-40 h-36 sm:w-48 sm:h-44 md:w-56 md:h-48 lg:w-60 lg:h-53.5 object-contain' />
+            <img src={heartImg} alt="heart" className='w-40 h-36 sm:w-48 sm:h-44 md:w-56 md:h-48 lg:w-60 lg:h-53.5 object-contain' />
           </div>
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start space-y-3.5 text-center lg:text-left">
             <div className='space-y-2'>
