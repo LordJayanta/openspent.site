@@ -4,6 +4,8 @@ import babel from '@rolldown/plugin-babel'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
+const repoName = '/openspent.site'
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -16,4 +18,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  base: process.env.NODE_ENV === 'production' ? repoName : '/',
 })

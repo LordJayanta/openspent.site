@@ -1,5 +1,6 @@
 {
   "name": "openspent.site",
+  "homepage": "https://lordjayanta.github.io/openspent.site",
   "private": true,
   "version": "0.1.0",
   "type": "module",
