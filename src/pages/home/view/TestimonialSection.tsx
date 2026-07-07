@@ -4,6 +4,7 @@ import heartImg from "@/assets/images/heart.webp"
 function TestimonialSection() {
   return (
     <section
+    id='about'
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 border-t border-neutral-900/60 bg-linear-to-r from-brandBg to-cardBg/40"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">

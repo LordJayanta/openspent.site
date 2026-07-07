@@ -5,6 +5,7 @@ import heroImg from '@/assets/images/hero-2.webp'
 function HeroSection() {
     return (
         <section
+            id="home"
             className="min-h-screen lg:h-[90vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative overflow-hidden py-12 lg:py-0"
         >
             <div className="lg:col-span-6 space-y-6 z-10">

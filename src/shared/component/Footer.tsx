@@ -16,9 +16,9 @@ const resourcesItems: NavItemType[] = [
 ]
 
 const productItem: NavItemType[] = [
-    { name: 'Features', href: '/' },
-    { name: 'Screenshots', href: '/' },
-    { name: 'Download', href: '/' },
+    { name: 'Features', href: '#features' },
+    { name: 'Screenshots', href: '#screenshots' },
+    { name: 'Download', href: '#download' },
     { name: 'Changelog', href: 'https://github.com/LordJayanta/openspent/releases' },
 ];
 
@@ -42,7 +42,7 @@ function Footer() {
 
 
                     <div className="grid grid-cols-3 gap-4 col-span-1 md:col-span-1">
-                        <FooterLinkList name='Product' navItem={productItem} />
+                        <FooterLinkList name='Product' navItem={productItem} linkType='a'/>
                         <FooterLinkList name='Resources' navItem={resourcesItems} />
                         <FooterLinkList name='Legal' navItem={legalItems} />
                     </div>
