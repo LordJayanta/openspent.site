@@ -1,6 +1,8 @@
 import FeaturesCard, { type FeaturesCardType } from './FeaturesCard'
 import { FaCode, FaLock } from 'react-icons/fa'
 import { RiWifiOffLine } from 'react-icons/ri'
+import { SiGoogleanalytics } from 'react-icons/si'
+import { TbFileDatabase } from 'react-icons/tb'
 
 const features: FeaturesCardType[] = [
   {
@@ -10,12 +12,12 @@ const features: FeaturesCardType[] = [
   },
   {
     icon: <FaLock className='w-6 h-6' />,
-    title: 'Privacy First',
+    title: 'Data Privacy',
     description: 'Your data remains on your device. We don\'t collect any personal information.',
   },
   {
     icon: <RiWifiOffLine className='w-6 h-6' />,
-    title: 'Offline First',
+    title: '100% Offline',
     description: 'Full operations offline. Your data never leaves your device through software logs.',
   },
   {
@@ -24,14 +26,14 @@ const features: FeaturesCardType[] = [
     description: 'Completely clean code structure with on-demand zero telemetry layers built in.',
   },
   {
-    icon: <FaLock className='w-6 h-6' />,
-    title: 'No Tracking',
-    description: 'Completely clean code structure with on-demand zero telemetry layers built in.',
+    icon: <SiGoogleanalytics className='w-6 h-6' />,
+    title: 'Smart Insights',
+    description: 'Built-in analytics and reports to help you make smarter decisions.',
   },
   {
-    icon: <FaLock className='w-6 h-6' />,
-    title: 'No Tracking',
-    description: 'Completely clean code structure with on-demand zero telemetry layers built in.',
+    icon: <TbFileDatabase className='w-6 h-6' />,
+    title: 'Export & Import',
+    description: 'Export and import your data. Keep your backup whenever you want.',
   }
 ]
 
