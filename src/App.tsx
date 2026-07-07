@@ -12,7 +12,9 @@ const router = createBrowserRouter([
     path: "/:slug",
     element: < Legal />,
   },
-]);
+],{
+  basename: import.meta.env.NODE_ENV === 'production' ? '/openspent.site' : '/',
+});
 
 function App() {
   return (
