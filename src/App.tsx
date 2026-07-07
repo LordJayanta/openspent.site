@@ -1,9 +1,9 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Index from "./pages/home/Index";
 import Legal from "./pages/legal/Legal";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Index />,
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     path: "/:slug",
     element: < Legal />,
   },
-],{
+], {
   basename: import.meta.env.NODE_ENV === 'production' ? '/openspent.site' : '/',
 });
 
