@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Privacy() {
   return (
     <section
@@ -10,7 +12,7 @@ export default function Privacy() {
               Privacy Policy
             </h1>
             <p className="text-xs text-textMuted font-medium">
-              Last updated: May 24, 2025
+              Last updated: July 7, 2026
             </p>
           </div>
 
@@ -138,16 +140,11 @@ export default function Privacy() {
               </p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>
-                  GitHub Repository:
-                  <span className="text-neutral-300"
-                    >[Insert Link to your OpenSpent Repo]</span
-                  >
+                  GitHub Repository :
+                  <Link to={'https://github.com/LordJayanta/openspent'} className="text-neutral-300"> https://github.com/LordJayanta/openspent</Link >
                 </li>
                 <li>
-                  Email:
-                  <span className="text-neutral-300"
-                    >[Insert your contact email]</span
-                  >
+                  Email : <span className="text-neutral-300"> techie.jayanta@gmail.com</span>
                 </li>
               </ul>
             </div>

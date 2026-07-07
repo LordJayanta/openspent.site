@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 
 export default function Terms() {
     return (
@@ -11,7 +12,7 @@ export default function Terms() {
                     Terms and Conditions
                 </h1>
                 <p className="text-xs text-textMuted font-medium">
-                    Effective Date: June 30, 2026
+                    Effective Date: July 7, 2026
                 </p>
             </div>
 
@@ -167,16 +168,12 @@ export default function Terms() {
                     </p>
                     <ul className="list-disc pl-5 space-y-1">
                         <li>
-                            GitHub Repository:
-                            <span className="text-neutral-300"
-                            >[Insert Link to your OpenSpent Repo]</span
-                            >
+                            GitHub Repository :
+                            <Link to={'https://github.com/LordJayanta/openspent'} className="text-neutral-300"> https://github.com/LordJayanta/openspent</Link >
                         </li>
                         <li>
-                            Email:
-                            <span className="text-neutral-300"
-                            >[Insert your contact email]</span
-                            >
+                            Email :
+                            <span className="text-neutral-300"> techie.jayanta@gmail.com</span>
                         </li>
                     </ul>
                 </div>
