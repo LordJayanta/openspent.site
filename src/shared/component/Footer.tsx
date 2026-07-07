@@ -27,26 +27,26 @@ function Footer() {
         <footer
             className="border-t border-neutral-900 bg-brandBg text-xs text-textMuted mt-12"
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-2 md:grid-cols-2 gap-8 mb-12">
-                    <div className="col-span-1 space-y-3">
-                        <div className="flex items-center space-x-2">
-                            <img src={iconImg} className="w-12 h-12 flex items-center justify-center shadow-md" />
-                            <span className="text-2xl font-bold text-white tracking-tight" >OpenSpent</span>
-                        </div>
-                        <p className="max-w-xs leading-relaxed text-neutral-500">
-                            An open-source expense tracker for everyone. Track smarter, spend
-                            better, live better.
-                        </p>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+                {/* Left Column: Brand Identity Info */}
+                <div className="col-span-1 lg:col-span-5 space-y-4">
+                    <div className="flex items-center space-x-2">
+                        <img src={iconImg} className="w-12 h-12 flex items-center justify-center shadow-md" alt="OpenSpent Logo" />
+                        <span className="text-2xl font-bold text-white tracking-tight">OpenSpent</span>
                     </div>
-
-
-                    <div className="grid grid-cols-3 gap-4 col-span-1 md:col-span-1">
-                        <FooterLinkList name='Product' navItem={productItem} linkType='a'/>
-                        <FooterLinkList name='Resources' navItem={resourcesItems} />
-                        <FooterLinkList name='Legal' navItem={legalItems} />
-                    </div>
+                    <p className="max-w-md leading-relaxed text-neutral-500 text-sm sm:text-base">
+                        An open-source expense tracker for everyone. Track smarter, spend better, live better.
+                    </p>
                 </div>
+
+                {/* Right Column: Dynamic Responsive Navigation Links */}
+                <div className="col-span-1 lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+                    <FooterLinkList name='Product' navItem={productItem} linkType='a' />
+                    <FooterLinkList name='Resources' navItem={resourcesItems} />
+                    {/* The legal column spans nicely or naturally drops to a clean next row on narrow devices */}
+                    <FooterLinkList name='Legal' navItem={legalItems} />
+                </div>
+
 
                 {/* <!-- Bottom Footnote Row --> */}
                 <div
